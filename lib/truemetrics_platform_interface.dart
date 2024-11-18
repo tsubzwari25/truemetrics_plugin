@@ -23,10 +23,6 @@ abstract class TruemetricsPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String> getPlatformVersion() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
-  }
-
   Future<String> initialize(String apiKey){
     throw UnimplementedError("Is not initialized $apiKey");
   }
@@ -46,5 +42,9 @@ abstract class TruemetricsPlatform extends PlatformInterface {
 
   Future<bool> deinit(){
     throw UnimplementedError("Deinitialization not implemented");
+  }
+
+  void logMetaData(Map<String,String> data){
+    throw UnimplementedError("Cant log Meta Data");
   }
 }

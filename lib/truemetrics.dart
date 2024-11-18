@@ -24,4 +24,8 @@ class Truemetrics {
     TruemetricsPlatform.instance.deinit();
   }
 
+  void logMetaData(Map<String, String> data){
+    TruemetricsPlatform.instance.logMetaData(data);
+  }
+
 }
