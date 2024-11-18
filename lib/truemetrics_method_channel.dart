@@ -29,6 +29,11 @@ class MethodChannelTruemetrics extends TruemetricsPlatform {
     return "Unknown";
   }
 
+  Future<bool> stopRecording() async{
+    await methodChannel.invokeMethod<String>("stopRecording");
+    return true;
+  }
+
   Future<bool> deinit()async{
     await methodChannel.invokeMethod<String>("deinit");
     return true;

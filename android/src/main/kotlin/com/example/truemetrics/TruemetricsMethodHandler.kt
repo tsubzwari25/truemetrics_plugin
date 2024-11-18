@@ -30,6 +30,12 @@ class TruemetricsMethodHandler : MethodCallHandler {
                 var sensorStats: String = truemetrics.startRecording()
                 result.success("Sensor Data $sensorStats")
             }
+            "stopRecording"-> {
+                truemetrics.stopRecording()
+            }
+            "deinit" -> {
+                truemetrics.deinit();
+            }
             else -> {
                 result.notImplemented()
             }

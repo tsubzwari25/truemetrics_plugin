@@ -29,6 +29,11 @@ class TruemetricsMethods() {
         TruemetricsSDK.stopRecording()
     }
 
+    fun deinit (){
+        TruemetricsSDK.deinitialize()
+    }
+
+
 //    fun requestActivityPermission(){
 //        TruemetricsSDK.
 //    }

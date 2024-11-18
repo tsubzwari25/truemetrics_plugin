@@ -80,6 +80,41 @@ class _MyAppState extends State<MyApp> {
                   color:Colors.amber,
                   child: Center(child: Text("Start Recording")),
                 ),
+              ), InkWell(
+                splashColor: Colors.amberAccent.shade100,
+                onTap: (){
+                  _truemetricsPlugin.stopRecording();
+                },
+                child: Container(
+                  width: 100,
+                  height: 100,
+                  color:Colors.amber,
+                  child: Center(child: Text("Stop Recording")),
+                ),
+              ),InkWell(
+                splashColor: Colors.amberAccent.shade100,
+                onTap: (){
+                  _truemetricsPlugin.initialize("snoonu_development_key_123");
+                },
+                child: Container(
+                  width: 100,
+                  height: 100,
+                  color:Colors.amber,
+                  child: Center(child: Text(" init")),
+                ),
+              ),
+              
+              InkWell(
+                splashColor: Colors.amberAccent.shade100,
+                onTap: (){
+                  _truemetricsPlugin.deinit();
+                },
+                child: Container(
+                  width: 100,
+                  height: 100,
+                  color:Colors.amber,
+                  child: Center(child: Text("De init")),
+                ),
               )
 
           ]

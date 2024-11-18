@@ -15,4 +15,13 @@ class Truemetrics {
   String startListening( ) {
     return TruemetricsPlatform.instance.startListening();
   }
+
+  void stopRecording() async{
+    TruemetricsPlatform.instance.stopRecording();
+  }
+
+  void deinit(){
+    TruemetricsPlatform.instance.deinit();
+  }
+
 }

@@ -28,6 +28,18 @@ class MockTruemetricsPlatform
     // TODO: implement startListening
     throw UnimplementedError("Not initialized");
   }
+
+  @override
+  Future<bool> deinit() {
+    // TODO: implement deinit
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<bool> stopRecording() {
+    // TODO: implement stopRecording
+    throw UnimplementedError();
+  }
 }
 
 void main() {
