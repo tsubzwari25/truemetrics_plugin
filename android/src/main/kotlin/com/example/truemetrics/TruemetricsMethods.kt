@@ -4,6 +4,7 @@ import android.content.Context
 import io.truemetrics.truemetricssdk.TruemetricsSDK
 import io.truemetrics.truemetricssdk.config.Config
 import io.truemetrics.truemetricssdk.engine.storage.db.SensorStats
+import java.util.Objects
 
 
 class TruemetricsMethods() {
@@ -31,6 +32,10 @@ class TruemetricsMethods() {
 
     fun deinit (){
         TruemetricsSDK.deinitialize()
+    }
+
+    fun logMetadeta (data: Map<String, String> ){
+        TruemetricsSDK.logMetadata(data);
     }
 
 
