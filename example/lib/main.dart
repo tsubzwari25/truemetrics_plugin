@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
       //   // Handle state changes here
       // });
 
-      _truemetricsPlugin.startRecording();
+      await _truemetricsPlugin.startRecording();
       _truemetricsPlugin.startListening();
 
     } on PlatformException {
@@ -103,7 +103,7 @@ class _MyAppState extends State<MyApp> {
                   child: Center(child: Text(" init")),
                 ),
               ),
-              
+
               InkWell(
                 splashColor: Colors.amberAccent.shade100,
                 onTap: (){
@@ -114,6 +114,19 @@ class _MyAppState extends State<MyApp> {
                   height: 100,
                   color:Colors.amber,
                   child: Center(child: Text("De init")),
+                ),
+              ),
+
+              InkWell(
+                splashColor: Colors.amberAccent.shade100,
+                onTap: (){
+                  _truemetricsPlugin.logMetaData({"OrderId": "12345"});
+                },
+                child: Container(
+                  width: 100,
+                  height: 100,
+                  color:Colors.amber,
+                  child: Center(child: Text("Log Data")),
                 ),
               )
 

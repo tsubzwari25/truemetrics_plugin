@@ -36,7 +36,7 @@ class TruemetricsMethodHandler : MethodCallHandler {
             "deinit" -> {
                 truemetrics.deinit();
             } "log"->{
-                var logs:Map<String, String> = call.arguments as Map<String, String>
+                var logs:Map<String, String> = call.arguments as Map<String,String>
                 truemetrics.logMetadeta(data = logs);
             }
             else -> {

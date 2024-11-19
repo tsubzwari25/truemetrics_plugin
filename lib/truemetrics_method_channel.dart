@@ -40,6 +40,7 @@ class MethodChannelTruemetrics extends TruemetricsPlatform {
   }
 
   void logMetaData(Map<String, String> data){
+
     methodChannel.invokeMethod("log", data);
   }
 

@@ -38,12 +38,4 @@ class TruemetricsMethods() {
         TruemetricsSDK.logMetadata(data);
     }
 
-
-//    fun requestActivityPermission(){
-//        TruemetricsSDK.
-//    }
-
-
-
-
 }

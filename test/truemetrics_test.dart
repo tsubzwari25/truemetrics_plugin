@@ -40,6 +40,13 @@ class MockTruemetricsPlatform
     // TODO: implement stopRecording
     throw UnimplementedError();
   }
+
+  @override
+  void logMetaData(Map<String, String> data) {
+    // TODO: implement logMetaData
+    throw UnimplementedError("Not implemented");
+  }
+  
 }
 
 void main() {
