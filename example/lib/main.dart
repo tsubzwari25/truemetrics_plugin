@@ -33,7 +33,7 @@ class _MyAppState extends State<MyApp> {
     // We also handle the message potentially returning null.
     try {
       isinit =
-          await _truemetricsPlugin.initialize("snoonu_development_key_123") ?? "false";
+          await _truemetricsPlugin.initialize("development_key_12") ?? "false";
       //  _truemetricsPlugin.startListening((event) {
       //   print("Truemetrics SDK State: $event");
       //   // Handle state changes here
