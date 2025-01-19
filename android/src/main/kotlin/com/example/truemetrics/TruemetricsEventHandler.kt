@@ -34,7 +34,7 @@ class TruemetricsEventHandler(private val context: Context) : EventChannel.Strea
             }
 
             override fun askPermissions(permissions: List<String>) {
-                eventSink?.success("ASK_PERMISSIONS")
+                eventSink?.success("${permissions.toString()}")
             }
         })
     }

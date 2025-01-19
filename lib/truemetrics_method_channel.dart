@@ -24,7 +24,7 @@ class MethodChannelTruemetrics extends TruemetricsPlatform {
      return event ?? "Null";
     }, onError: (error) {
       print("Error received from native code: $error");
-      return "error";
+      return "error:  $error";
     });
     return "Unknown";
   }
@@ -40,7 +40,6 @@ class MethodChannelTruemetrics extends TruemetricsPlatform {
   }
 
   void logMetaData(Map<String, String> data){
-
     methodChannel.invokeMethod("log", data);
   }
 

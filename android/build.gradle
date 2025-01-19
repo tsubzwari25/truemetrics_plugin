@@ -54,7 +54,7 @@ android {
     }
 
     dependencies {
-        implementation 'io.truemetrics:truemetricssdk:1.0.20'
+        implementation 'io.truemetrics:truemetricssdk:1.0.24'
         testImplementation("org.jetbrains.kotlin:kotlin-test")
         testImplementation("org.mockito:mockito-core:5.0.0")
     }

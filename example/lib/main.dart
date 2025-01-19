@@ -94,7 +94,7 @@ class _MyAppState extends State<MyApp> {
               ),InkWell(
                 splashColor: Colors.amberAccent.shade100,
                 onTap: (){
-                  _truemetricsPlugin.initialize("snoonu_development_key_123");
+                  _truemetricsPlugin.initialize("development");
                 },
                 child: Container(
                   width: 100,
