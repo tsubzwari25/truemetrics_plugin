@@ -1,0 +1,2 @@
+/Users/administrator/Desktop/truemetrics/example/android/app/.cxx/Debug/59244161/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/administrator/Desktop/truemetrics/example/android/app/.cxx/Debug/59244161/arm64-v8a/CMakeFiles/rebuild_cache.dir
